@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="TSINF6NB004" name="com.mpa.test.UserJunitTest" skipped="0" tests="4" time="0.209" timestamp="2014-08-23T04:21:30">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="env.DEFLOGDIR" value="C:\ProgramData\McAfee\DesktopProtection" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env.PROMPT" value="$P$G" />
+    <property name="os.name" value="Windows 7" />
+    <property name="env.FP_NO_HOST_CHECK" value="NO" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.6.0_34\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_34\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_34\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_34\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_34\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_34\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_34\jre\lib\modules\jdk.boot.jar;C:\Program Files\Java\jdk1.6.0_34\jre\classes" />
+    <property name="test-classes" value="D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\build\test-classes" />
+    <property name="env.COMPUTERNAME" value="TSINF6NB004" />
+    <property name="env.CommonProgramW6432" value="C:\Program Files\Common Files" />
+    <property name="TODAY" value="August 23 2014" />
+    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\apache-ant-1.9.4" />
+    <property name="java.runtime.version" value="1.6.0_34-b04" />
+    <property name="env.HOMEPATH" value="\Users\ni682" />
+    <property name="war.src.dir" value="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps" />
+    <property name="user.name" value="ni682" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_34\jre\bin" />
+    <property name="ant.project.default-target" value="mpa-war-build" />
+    <property name="ant.project.name" value="mpa-demo" />
+    <property name="DSTAMP" value="20140823" />
+    <property name="java.version" value="1.6.0_34" />
+    <property name="env.PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 69 Stepping 1, GenuineIntel" />
+    <property name="classes" value="D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\build\classes" />
+    <property name="ant.file.mpa-demo" value="D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\build.xml" />
+    <property name="user.timezone" value="" />
+    <property name="env.TEMP" value="C:\Users\ni682\AppData\Local\Temp" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_34\jre\lib\endorsed" />
+    <property name="env.VSEDEFLOGDIR" value="C:\ProgramData\McAfee\DesktopProtection" />
+    <property name="env._JAVACMD" value="C:\Program Files\Java\jdk1.6.0_34\bin\java.exe" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="env.HOMEDRIVE" value="C:" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="50.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.6.0_34\jre" />
+    <property name="env.PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\" />
+    <property name="env.APPDATA" value="C:\Users\ni682\AppData\Roaming" />
+    <property name="env.PUBLIC" value="C:\Users\Public" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.CATALINA_HOME" value="C:\Program Files\Apache Software Foundation\Tomcat 6.0" />
+    <property name="env.ComSpec" value="C:\Windows\system32\cmd.exe" />
+    <property name="env.OS" value="Windows_NT" />
+    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+    <property name="ant.file" value="D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\build.xml" />
+    <property name="os.version" value="6.1" />
+    <property name="env.GIT_HOME" value="C:\Program Files (x86)\Git" />
+    <property name="env.ProgramW6432" value="C:\Program Files" />
+    <property name="env._USE_CLASSPATH" value="no" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="20.9-b04" />
+    <property name="user.variant" value="" />
+    <property name="env.USERPROFILE" value="C:\Users\ni682" />
+    <property name="ant.library.dir" value="D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\apache-ant-1.9.4\lib" />
+    <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.6.0_34" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="env.TMP" value="C:\Users\ni682\AppData\Local\Temp" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="tomcat.service.name" value="Tomcat6" />
+    <property name="user.home" value="C:\Users\ni682" />
+    <property name="env.ProgramData" value="C:\ProgramData" />
+    <property name="env.SESSIONNAME" value="Console" />
+    <property name="env.ProgramFiles(x86)" value="C:\Program Files (x86)" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="env.NUMBER_OF_PROCESSORS" value="4" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_34\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.6.0_34\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\MySQL\MySQL Enterprise Backup 3.9.0\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.3.6\;C:\Program Files (x86)\Git\bin;D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\apache-ant-1.9.4\bin;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\Program Files\MongoDB 2.6 Standard\bin;D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\Gradle Task\gradle-1.12\bin;C:\Program Files\Java\jdk1.6.0_34\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\MySQL\MySQL Enterprise Backup 3.9.0\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.3.6\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\bin;D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\apache-ant-1.9.4\bin;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\Program Files\MongoDB 2.6 Standard\bin;D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\Gradle Task\gradle-1.12\bin;." />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="env.USERDNSDOMAIN" value="TSINDIA.IN" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
+    <property name="java.class.path" value="D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\WebContent\WEB-INF\lib\antlr-runtime-3.0.jar;D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\WebContent\WEB-INF\lib\commons-logging-1.0.4.jar;D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\WebContent\WEB-INF\lib\hamcrest-core-1.3.jar;D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\WebContent\WEB-INF\lib\junit-4.11.jar;D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\WebContent\WEB-INF\lib\org.springframework.asm-3.0.0.M3.jar;D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\WebContent\WEB-INF\lib\org.springframework.beans-3.0.0.M3.jar;D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\WebContent\WEB-INF\lib\org.springframework.context-3.0.0.M3.jar;D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\WebContent\WEB-INF\lib\org.springframework.context.support-3.0.0.M3.jar;D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\WebContent\WEB-INF\lib\org.springframework.core-3.0.0.M3.jar;D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\WebContent\WEB-INF\lib\org.springframework.expression-3.0.0.M3.jar;D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\WebContent\WEB-INF\lib\org.springframework.web-3.0.0.M3.jar;D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\WebContent\WEB-INF\lib\org.springframework.web.servlet-3.0.0.M3.jar;D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\WebContent\WEB-INF\lib\selenium-server-standalone-2.42.2.jar;D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\build\classes;D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\build\test-classes;D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\apache-ant-1.9.4\lib\ant-launcher.jar;D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\apache-ant-1.9.4\lib\ant.jar;D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\apache-ant-1.9.4\lib\ant-junit.jar;D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\apache-ant-1.9.4\lib\ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.mpa.test.UserJunitTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\build\test-reports\TEST-com.mpa.test.UserJunitTest.xml crashfile=D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\junitvmwatcher2751825067979939019.properties propsfile=D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\junit3121646193867625531.properties" />
+    <property name="timestamp" value="2014-08-23_12-21" />
+    <property name="TSTAMP" value="0021" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="env.LOGONSERVER" value="\\TSINF5D080" />
+    <property name="env.windir" value="C:\Windows" />
+    <property name="env.PROCESSOR_ARCHITECTURE" value="AMD64" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="war.dest.dir" value="D:/VigneshI682/BCBSM/Documents/Hudson/build/backup" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="env.ProgramFiles" value="C:\Program Files" />
+    <property name="env.ANT_HOME" value="D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\apache-ant-1.9.4" />
+    <property name="java.io.tmpdir" value="C:\Users\ni682\AppData\Local\Temp\" />
+    <property name="env.PROCESSOR_REVISION" value="4501" />
+    <property name="env.CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="env.SystemRoot" value="C:\Windows" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="env.=D:" value="D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.6.0_34\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="env.LOCALAPPDATA" value="C:\Users\ni682\AppData\Local" />
+    <property name="user.dir" value="D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
+    <property name="env.Path" value="C:\Program Files\Java\jdk1.6.0_34\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\MySQL\MySQL Enterprise Backup 3.9.0\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.3.6\;C:\Program Files (x86)\Git\bin;D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\apache-ant-1.9.4\bin;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\Program Files\MongoDB 2.6 Standard\bin;D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\Gradle Task\gradle-1.12\bin;C:\Program Files\Java\jdk1.6.0_34\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\MySQL\MySQL Enterprise Backup 3.9.0\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.3.6\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\bin;D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\apache-ant-1.9.4\bin;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\Program Files\MongoDB 2.6 Standard\bin;D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\Gradle Task\gradle-1.12\bin" />
+    <property name="tomcat.home" value="C:/Program Files/Apache Software Foundation/Tomcat 6.0" />
+    <property name="basedir" value="D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="D:\VigneshI682\BCBSM\BCBSCM_SOFTWARES\apache-ant-1.9.4\lib\ant.jar" />
+    <property name="env.USERNAME" value="ni682" />
+    <property name="env.SystemDrive" value="C:" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="env.USERDOMAIN" value="TSINDIA" />
+    <property name="ant.file.type.mpa-demo" value="file" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="env.=C:" value="C:\Users\ni682" />
+    <property name="ant.project.invoked-targets" value="mpa-war-build" />
+    <property name="test-reports" value="D:\VigneshI682\BCBSM\Workspace\Hudson Sample\Git\GitClonedRepo\20140611a\mpa-demo\build\test-reports" />
+    <property name="env.PROCESSOR_LEVEL" value="6" />
+  </properties>
+  <testcase classname="com.mpa.test.UserJunitTest" name="testPasswordLength" time="0.0010" />
+  <testcase classname="com.mpa.test.UserJunitTest" name="testNameLength" time="0.0" />
+  <testcase classname="com.mpa.test.UserJunitTest" name="testUserNameEmpty" time="0.0" />
+  <testcase classname="com.mpa.test.UserJunitTest" name="testUserLimit" time="0.0010" />
+  <system-out><![CDATA[[James, testuser0, testuser1, testuser2]
+Total number of registered users : 4
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

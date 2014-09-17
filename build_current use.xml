@@ -1,0 +1,121 @@
+<project name="mpa-demo" default="mpa-war-build">
+
+	<property name="classes" location="build/classes"/>
+	<property name="test-classes" location="build/test-classes"/>
+	<property name="test-reports" location="build/test-reports"/>
+
+	<property file="build.properties" />
+	<property environment="env" />
+
+
+	<presetdef name="javac">
+		<javac includeantruntime="false" />
+	</presetdef>
+
+	<path id="classpath">
+		<fileset dir="WebContent/WEB-INF/lib">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+	<path id="test-classpath">
+		<path refid="classpath"/>
+		<pathelement location="${classes}"/>
+		<pathelement location="${test-classes}"/>
+	</path>
+
+	<target name="mpa-clean">
+		<delete dir="dist"/>
+		<delete dir="build"/>
+		<echo message="Existing build dirctory (folders and files) are removerd for new build."/>
+	</target>
+
+	<target name="mpa-java-compile">
+		<mkdir dir="${classes}"/>
+		<javac destdir="${classes}">
+			<classpath refid="classpath"/>
+			<src path="src"/>
+			<src path="src"/>
+		</javac>
+		<copy todir="${classes}">
+			<fileset dir="src" excludes="**/*.java"/>
+		</copy>
+	</target>
+
+	<target name="mpa-testfile-compile" depends="mpa-java-compile">
+		<mkdir dir="${test-classes}"/>
+		<javac destdir="${test-classes}">
+			<src path="src"/>
+			<src path="src"/>
+			<classpath refid="test-classpath"/>
+		</javac>
+	</target>
+
+	<!-- JUnit test cases run  -->
+	<target name="mpa-junit-test-run" depends="mpa-testfile-compile">
+		<mkdir dir="${test-reports}"/>
+		<junit printsummary="yes" fork="true" haltonfailure="yes">
+			<classpath refid="test-classpath"/>
+			<formatter type="brief" usefile="false"/>
+			<formatter type="xml"/>
+			<batchtest todir="${test-reports}" failureproperty="failed"
+                       errorproperty="failed">
+				<fileset dir="${test-classes}" includes="**/*Junit*.class"/>
+			</batchtest>
+		</junit>
+	</target>
+
+	<!-- Check whether Tomcat is running -->
+	<target name="check-tomcat-port" description="Check whether Tomcat is running" depends="mpa-junit-test-run">
+		<echo message="Checking whether Tomcat is running"/>
+		<condition property="tomcat.running">
+			<socket server="localhost" port="9090"/>
+		</condition>
+	</target>
+
+	<tstamp>
+		<format property="timestamp" pattern="yyyy-MM-dd_hh-mm"/>
+	</tstamp>
+
+	<!-- Backup war file inside backup folder -->
+	<target name="mpa-war-backup" depends="check-tomcat-port">
+		<copy file="${war.src.dir}/${ant.project.name}.war" 
+				todir="${war.dest.dir}/${ant.project.name}_${timestamp}.war"/>
+		<echo message="Previous war file backup completed."/>
+	</target>
+
+	<!--    delete war and folder -->
+	<target name="remove-war" depends="mpa-war-backup" >
+		<echo message="war file deleted successfully."/>
+		<echo message="war folder deleted successfully."/>
+	</target>
+
+	<!-- Deploy war in Tomcat server 6.0 not 7.0 bcz Hudson already deployed  -->
+	<target name="mpa-war-deploy" depends="remove-war">
+		<war needxmlfile="false"
+						 destfile="${tomcat.home}/webapps/${ant.project.name}.war"
+			             basedir="WebContent"
+			             excludes="**/CVS">
+			<classes dir="${classes}"/>
+		</war>
+		<echo message="war file deployed successfully."/>
+	</target>
+
+	<!-- Selenium test cases run  -->
+	<target name="mpa-selenium-test-run" depends="mpa-war-deploy">
+		<echo message="Selenium test"/>
+		<junit printsummary="yes">
+			<classpath refid="test-classpath"/>
+			<formatter type="brief" usefile="false"/>
+			<formatter type="xml"/>
+			<batchtest todir="${test-reports}" failureproperty="failed" errorproperty="failed">
+				<fileset dir="${test-classes}" includes="**/*Selenium*.class"/>
+			</batchtest>
+		</junit>
+	</target>
+
+	<target name="mpa-war-build" depends="mpa-clean, mpa-java-compile, mpa-selenium-test-run  ">
+		<echo message="Build process completed!!! "/>
+	</target>
+
+</project>

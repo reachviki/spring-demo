@@ -1,0 +1,50 @@
+<project name="mpa-demo" default="mpa-war-build">
+
+	<property file="build.properties" />
+	<property environment="env" />
+		
+		<path id="tomcat.class.path">
+		    <fileset dir="${tomcat.home}/lib">
+		        <include name="**/*.jar"/>
+		        <include name="**/*.zip"/>
+		    </fileset>
+		    <pathelement location="${tomcat.home}/bin/bootstrap.jar"/>
+		    <pathelement location="${tomcat.home}/bin/tomcat-juli.jar"/>
+		</path>
+		 
+		<target name="main.task" >
+		    <sequential>
+		        <antcall target="tomcat-stop"/>
+		        <antcall target="tomcat-start"/>
+		    </sequential>
+		        	<echo message="**************** started **************"/>
+		</target>
+		 
+		<target name="tomcat-start">
+		    <java classname="org.apache.catalina.startup.Bootstrap" fork="true"
+		        classpathref="tomcat.class.path">
+		        <jvmarg value="-Dcatalina.home=${tomcat.home}"/>
+		    </java>
+		</target>
+		 
+		<target name="tomcat-stop" depends="tomcat-check-status" if="tomcat.started">
+		    <java classname="org.apache.catalina.startup.Bootstrap" fork="true"
+		        classpathref="tomcat.class.path">
+		        <jvmarg value="-Dcatalina.home=${tomcat.home}"/>
+		        <arg line="stop"/>
+		    </java>
+		    <sleep seconds="5"/>
+		</target>
+		 
+		<target name="tomcat-check-status">
+		    <condition property="tomcat.started">
+		        <socket server="localhost" port="9090"/>
+		    </condition>
+		</target>
+
+
+	<target name="mpa-war-build" depends="main.task  ">
+		<echo message="Build process completed!!! "/>
+	</target>
+
+</project>
